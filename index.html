@@ -22,7 +22,7 @@
     </nav>
     <div class="header-text">
         <p>Web Developer</p>
-        <h1>Hello, I'm <span>Sree Parvathy</span> </h1>
+        <h1><span>Sree Parvathy</span> </h1>
     </div>
    </div>
     </div>
@@ -45,13 +45,74 @@
                      
                      </p>
                      <div class="tab-titles">
-                        <p class="tab-links">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
                      </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Problem-Solving</span><br>Logical thinking<br> Debugging</li>
+                            <li><span>Operating Systems</span><br>Windows<br>Linux<br>MacOS</li>
+                            <li><span>Web Development</span><br>HTML<br>CSS<br>JavaScript</li>
+                            <li><span>Database Management</span><br>MySQL</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Cyber Security Analyst Job Simulation</span><br>Critical Thinking<br>Business Process Analysis</li>
+                            <li><span>Data Analytics and Visualization Job Simulation</span><br>Data Analysis<br>Data Visualization</li>
+                            <li><span>AWS APAC Solutions Architecture Virtual Experience</span><br>Technical Communication</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents"id="education">
+                        <ul>
+                            <li><span>Post Graduation | 2024-2026 </span><br>APJ Abdul Kalam Technological University</li>
+                            <li><span>Under Graduation | 2021-2024 </span><br>Mahatma Gandhi University</li>
+                            <li><span>Higher Secondary Education | 2019-2021 </span><br>Bhavans Vidya Mandir</li>
+                            <li><span>Secondary School Education | 2018-2019</span><br>Sri Sri Ravishankar Vidya Mandir</li>
+                        </ul>
+                     </div> 
                 </div>
             </div>
         </div>
     </div>
+    <!-- -------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Get a stunning, responsive, and user-friendly website tailored to your needs</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>Enhance user experience with intuitive, visually appealing UI/UX design. Create seamless, engaging, and user-friendly digital products</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p>Get a sleek, user-friendly, and high-performance app design tailored to your needs.r</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
     </body>
 </html>

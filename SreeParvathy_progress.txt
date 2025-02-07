@@ -3,3 +3,9 @@ Day 1 : 06-02-25
 Learn : Brushed up basics of CSS and html
 Implement : Applied it for designing nav tab,adding image and a description about me
 Challenges : Finding the right tags
+
+Day 2 : 07-02-25
+
+Learn : More CSS tags
+Implement : Applied it for adding education experience and skills
+Challenges : Finding the right tags
