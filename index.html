@@ -2,10 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Portfolio of Sree Parvathy - Web Developer, UI/UX Designer, and App Designer.">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Personal Portfolio</title>
+        <title>Sree Parvathy | Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d604bea217.js" crossorigin="anonymous"></script>
     </head>
     <body>
     <div id="header">
@@ -14,10 +16,10 @@
         <img src="images/logo.png" class="logo" >
         <ul>
             <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="images/RESUMEL.pdf" download>Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div class="header-text">
@@ -82,23 +84,52 @@
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
+                    <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
                     <p>Get a stunning, responsive, and user-friendly website tailored to your needs</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
+                    <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
                     <p>Enhance user experience with intuitive, visually appealing UI/UX design. Create seamless, engaging, and user-friendly digital products</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
+                    <i class="fa-brands fa-app-store"></i>
                     <h2>App Design</h2>
-                    <p>Get a sleek, user-friendly, and high-performance app design tailored to your needs.r</p>
+                    <p>Get a sleek, user-friendly, and high-performance app design tailored to your needs</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
+   
+        <div id="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>sreeparvathynsn@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6238498106</p>
+
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sree-parvathy/"target="_blank"><i class="fab fa-linkedin"></i></a> 
+                            <a href="https://www.instagram.com/srxxpxrvxthy/"target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="images/RESUMEL.pdf" download class="btn btn2">Download CV</a>
+                  </div>  
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="Submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                
+
+            </div>
+        </div>
     <script>
         var tablinks=document.getElementsByClassName("tab-links");
         var tabcontents=document.getElementsByClassName("tab-contents");
